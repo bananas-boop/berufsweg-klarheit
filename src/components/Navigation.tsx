@@ -44,37 +44,37 @@ const Navigation = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 bg-nav transition-all duration-500 ease-in-out border-b border-divider ${
-        visible && !atTop
-          ? "translate-y-0 opacity-100"
-          : "-translate-y-full opacity-0"
-      }`}
-    >
-      <div className="max-w-6xl mx-auto px-6 md:px-12 flex items-center justify-between h-16">
+      visible && !atTop ?
+      "translate-y-0 opacity-100" :
+      "-translate-y-full opacity-0"}`
+      }>
+
+      <div className="max-w-6xl mx-auto px-6 md:px-12 flex items-center justify-between h-16 text-primary bg-inherit">
         <button
           onClick={scrollToTop}
-          className="text-foreground font-light text-lg tracking-tight hover:text-primary transition-colors"
-        >
+          className="text-foreground font-light text-lg tracking-tight hover:text-primary transition-colors">
+
           Sarah Abu-Koash
         </button>
         <div className="hidden md:flex items-center gap-10">
           {[
-            { label: "Nächster Schritt", id: "naechster-schritt" },
-            { label: "Arbeit", id: "arbeit" },
-            { label: "Über mich", id: "ueber-mich" },
-            { label: "Kontakt", id: "kontakt" },
-          ].map((item) => (
-            <button
-              key={item.id}
-              onClick={() => scrollTo(item.id)}
-              className="text-foreground text-sm font-light tracking-wide hover:text-primary transition-colors"
-            >
+          { label: "Nächster Schritt", id: "naechster-schritt" },
+          { label: "Arbeit", id: "arbeit" },
+          { label: "Über mich", id: "ueber-mich" },
+          { label: "Kontakt", id: "kontakt" }].
+          map((item) =>
+          <button
+            key={item.id}
+            onClick={() => scrollTo(item.id)}
+            className="text-foreground text-sm font-light tracking-wide hover:text-primary transition-colors">
+
               {item.label}
             </button>
-          ))}
+          )}
         </div>
       </div>
-    </nav>
-  );
+    </nav>);
+
 };
 
 export default Navigation;
