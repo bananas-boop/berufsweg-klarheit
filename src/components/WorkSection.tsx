@@ -14,14 +14,14 @@ const WorkSection = () => {
   }, []);
 
   return (
-    <section id="arbeit" className="py-24 md:py-36 px-6 md:px-12 bg-background">
+    <section id="arbeit" className="py-20 md:py-28 px-6 md:px-12 bg-background">
       <div
         ref={ref}
-        className={`max-w-2xl mx-auto transition-all duration-1000 ${
+        className={`max-w-3xl mx-auto card-surface p-8 md:p-14 transition-all duration-1000 ${
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light mb-12 text-foreground">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-light mb-10 text-foreground tracking-tight">
           Über meine Arbeit
         </h2>
         <p className="text-foreground/85 text-base md:text-[1.05rem] font-light leading-[1.85]">
