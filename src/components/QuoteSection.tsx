@@ -21,7 +21,8 @@ const QuoteSection = () => {
           visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >
-        <blockquote className="text-quote text-xl md:text-2xl lg:text-[1.7rem] font-light leading-relaxed italic">
+        <div className="w-10 h-px bg-primary/40 mx-auto mb-10" />
+        <blockquote className="text-foreground text-xl md:text-2xl lg:text-[1.7rem] font-light leading-relaxed">
           „Entwicklung beginnt nicht immer mit einer klaren Richtung.
           <br />
           Oft beginnt sie damit, die richtigen Fragen zu stellen und den eigenen Standpunkt zu klären."
