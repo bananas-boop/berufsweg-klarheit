@@ -86,7 +86,9 @@
   }
 
   .bg-nav {
-    background-color: hsl(var(--nav-bg));
+    background-color: hsl(0 0% 100% / 0.85);
+    backdrop-filter: saturate(180%) blur(12px);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
   }
 
   .text-nav {
@@ -103,6 +105,13 @@
 
   .text-quote {
     color: hsl(var(--quote-text));
+  }
+
+  .card-surface {
+    background-color: hsl(var(--card));
+    border: 1px solid hsl(var(--border));
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
   }
 
   .fade-in {
