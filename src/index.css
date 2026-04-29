@@ -35,16 +35,18 @@
     --input: 220 13% 91%;
     --ring: 211 27% 56%;
 
-    --radius: 0.375rem;
+    --radius: 1rem;
 
     /* Custom tokens */
-    --nav-bg: 0 0% 100%;
+    --nav-bg: 0 0% 100% / 0.85;
     --nav-text: 213 24% 16%;
     --hero-overlay: 213 24% 16% / 0.25;
     --hero-text: 0 0% 100%;
-    --section-alt: 200 30% 90%;
+    --section-alt: 100 9% 97%;        /* same as bg, very subtle */
     --divider: 220 13% 91%;
-    --quote-text: 220 9% 46%;
+    --quote-text: 213 24% 16%;
+
+    --shadow-card: 0 1px 2px hsl(213 24% 16% / 0.04), 0 8px 24px hsl(213 24% 16% / 0.04);
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
